@@ -17,13 +17,13 @@
 
     <title>DoctorCare</title>
 </head>
-<body>
+<body onscroll="onScroll()">
 <div class="container">
     <header class="header">
         
-       <nav class="navigation scroll wrapper">
-             <a class="logo" href="#"><img src="./assets/logo.svg"></a>
-            <img src="./assets/icon-menu1.svg">
+       <nav id="navigation" class="wrapper">
+             <a href="#"><img class="logo" src="./assets/logo.svg"></a>
+            <img class="menuToggle" src="./assets/icon-menu1.svg">
        </nav>
         
     </header>
@@ -61,6 +61,9 @@
         
     </section>
 </div>
+
+
+<script src="./js/scripts.js"></script>
 </body>
  
 </html>

@@ -32,6 +32,8 @@ body{
 .wrapper{
     width: 37.5rem;
     margin-inline: auto;
+    
+    
 }
 .container{
     font-family: 'DM Sans', sans-serif;
@@ -41,7 +43,7 @@ body{
 
 /* INICIO-HEADER */
 
-.navigation{
+#navigation{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +55,19 @@ body{
     height: var(--nav--heigth);
     
 }
+
+.scroll{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--brand--green);
+    width: 100%;
+    
+      
+}
+
+
 
 /* FIM-HEADER */
 
