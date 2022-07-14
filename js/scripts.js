@@ -1,24 +1,16 @@
-const menuScroll = {
-    imgToggle:'./assets/icon-menu2.svg',
-    imgLogo2:'./assets/logo2.svg'
-}
-
-
-function changeMenuScroll(menuScroll){
-    const logoElement = document.querySelector('.logo');
-    const menuToggle = document.querySelector('.menuToggle');
-    logoElement.setAttribute('src', menuScroll.imgLogo2)
-    menuToggle.setAttribute('src', menuScroll.imgToggle)
-}
-
+//função altera o estado do menuToggle, adicionando elemento css e alterando as imagens
+ 
 const navigation = document.querySelector('#navigation')
 
 function onScroll(){
     if(scrollY > 0){
-        navigation.classList.add('scroll'),
-        changeMenuScroll()
+        navigation.classList.add('scroll') // adiciona elemento css
+        document.querySelector('.logo').src = './assets/logo2.svg'
+        document.querySelector('.open-menu').src = './assets/icon-menu2.svg'
+       
     } else{
         navigation.classList.remove('scroll')
+        document.querySelector('.logo').src = './assets/logo.svg'
+        document.querySelector('.open-menu').src = './assets/icon-menumenu1.svg'
     }   
 }
-

@@ -17,15 +17,49 @@
 
     <title>DoctorCare</title>
 </head>
-<body onscroll="onScroll()">
+<!-- no body foi chamada a function onScroll -->
+<body onscroll="onScroll()" class="menu-open">  
 <div class="container">
     <header class="header">
         
        <nav id="navigation" class="wrapper">
              <a href="#"><img class="logo" src="./assets/logo.svg"></a>
-            <img class="menuToggle" src="./assets/icon-menu1.svg">
+            <button class="open-menu" ><img src="./assets/icon-menu1.svg"></button>
+            <button class="close-menu" ><img src="./assets/icon-close.svg"></button>
        </nav>
-        
+
+    <section class="menu-open">
+        <nav class="menu-nav-on">
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Depoimentos</a>
+                    </li>
+                </ul>
+        </nav>
+        <button type="button" class="btn-consulta">Agende sua consulta</button>
+
+        <ul class="menu-social-links">
+                <li>
+                    <a href="#"><img src="./assets/icon-insta.svg" alt="icone instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/icon-face.svg" alt="icone facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/icon-youtube.svg" alt="icone youtube"></a>
+                </li>
+        </ul>
+    </section> 
+
     </header>
     <section class="hero-section wrapper">
         <h2 class="txt-subtitle txt-boas-vindas">Boas-Vindas a Doctorcare 👋</h2>
