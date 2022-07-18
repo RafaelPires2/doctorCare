@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <link rel="stylesheet" href="./css/styles.css">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <!-- Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fonts -->
 
     <title>DoctorCare</title>
-</head>
-<!-- no body foi chamada a function onScroll -->
-<body onscroll="onScroll()" class="menu-open">  
-<div class="container">
-    <header class="header">
-        
-       <nav id="navigation" class="wrapper">
-             <a href="#"><img class="logo" src="./assets/logo.svg"></a>
-            <button class="open-menu" ><img src="./assets/icon-menu1.svg"></button>
-            <button class="close-menu" ><img src="./assets/icon-close.svg"></button>
-       </nav>
+  </head>
+  <!-- no body foi chamada a function onScroll -->
+  <body onscroll="onScroll()">
+    <div class="container">
+      <header class="header">
+        <nav id="navigation" class="wrapper">
+          <a id="logoExpanded" class="logo" href="#"
+            ><p>Doctor<span>Care</span></p></a
+          >
 
-    <section class="menu-open">
-        <nav class="menu-nav-on">
-                <ul>
-                    <li>
-                        <a href="#">Início</a>
-                    </li>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#">Depoimentos</a>
-                    </li>
-                </ul>
+          <!-- <a href="#"><img class="logo" src="./assets/logo.svg"></a> -->
+
+          <button onclick="menuExpendedOn()">
+            <img class="open-menu btn-menu btn-menu1" src="./assets/icon-menu1.svg" />
+          </button>
+          <button onclick="menuExpendedOff()">
+            <img class="close-menu btn-menu btn-menu2" src="./assets/icon-close.svg" />
+          </button>
         </nav>
-        <button type="button" class="btn-consulta">Agende sua consulta</button>
 
-        <ul class="menu-social-links">
-                <li>
-                    <a href="#"><img src="./assets/icon-insta.svg" alt="icone instagram"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/icon-face.svg" alt="icone facebook"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./assets/icon-youtube.svg" alt="icone youtube"></a>
-                </li>
-        </ul>
-    </section> 
+        <div class="menu displayNone">
+          <nav class="menu-nav-on">
+            <ul>
+              <li>
+                <a href="#">Início</a>
+              </li>
+              <li>
+                <a href="#">Sobre</a>
+              </li>
+              <li>
+                <a href="#">Serviços</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#" class="btn-consulta">Agende sua consulta</a>
 
-    </header>
-    <section class="hero-section wrapper">
-        <h2 class="txt-subtitle txt-boas-vindas">Boas-Vindas a Doctorcare 👋</h2>
+          <ul class="social-links">
+            <li>
+              <a href="#"
+                ><img src="./assets/icon-insta.svg" alt="icone instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icon-face.svg" alt="icone facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/icon-youtube.svg" alt="icone youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero-section wrapper">
+        <h2 class="txt-subtitle txt-boas-vindas">
+          Boas-Vindas a Doctorcare 👋
+        </h2>
         <h1 class="title">Assistência médica simplificada para todos</h1>
-        <p class="txt-medicos">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
-    
+        <p class="txt-medicos">
+          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+          raiz de sua doença e proporcionar uma cura a longo prazo.
+        </p>
+
         <button type="button" class="button-consulta">
-            <img src="./assets/whats.svg">
-            agende sua consulta
-        </button>          
+          <img src="./assets/whats.svg" />
+          agende sua consulta
+        </button>
 
-        <img class="foto-mulher" src="./assets/mulher.svg">
+        <img class="foto-mulher" src="./assets/mulher.svg" />
 
-            <div class="box-numbers">
-                <div class="box-number1">
-                    <h3 class="txt-box-numbers">+3.500</h3>
-                    <p class="txt-box-info">Pacientes atendidos</p>
-                </div>
-                <div class="box-number2">
-                    <h3 class="txt-box-numbers">+15</h3>
-                    <p class="txt-box-info">Especialistas disponíveis</p>
-                </div>
-                <div class="box-number3">
-                    <h3 class="txt-box-numbers">+10</h3>
-                    <p class="txt-box-info">Anos no mercado</p>
-                </div>
-            </div>
+        <div class="box-numbers">
+          <div class="box-number1">
+            <h3 class="txt-box-numbers">+3.500</h3>
+            <p class="txt-box-info">Pacientes atendidos</p>
+          </div>
+          <div class="box-number2">
+            <h3 class="txt-box-numbers">+15</h3>
+            <p class="txt-box-info">Especialistas disponíveis</p>
+          </div>
+          <div class="box-number3">
+            <h3 class="txt-box-numbers">+10</h3>
+            <p class="txt-box-info">Anos no mercado</p>
+          </div>
+        </div>
+      </section>
 
-    </section>
-
-    <section class="servicos-section">
+      <section class="servicos-section">
         <h4 class="txt-subtitle" id="txt-servicos-section">Serviços</h4>
-        
-    </section>
-</div>
+      </section>
+    </div>
 
-
-<script src="./js/scripts.js"></script>
-</body>
- 
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

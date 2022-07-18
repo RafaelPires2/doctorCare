@@ -1,23 +1,29 @@
-*{
-    margin:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    box-sizing: border-box;
     padding: 0;
 }
-ul, a, li{
+
+ul, a, li {
     list-style: none;
     text-decoration: none;
 }
 
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
 
-:root{
+:root {
     /* primary-color */
 
     --brand--green-light: #DCE9E2;
     --brand--green: #00856F;
-    --brand-green-light-02:#F7F9F9; 
-    --brand-beige:#FFFAF1 ;
-    --brand-green-hover:#00453A;
+    --brand-green-light-02: #F7F9F9;
+    --brand-beige: #FFFAF1;
+    --brand-green-hover: #00453A;
 
     /* primary-color */
 
@@ -25,101 +31,131 @@ ul, a, li{
 
     --gray-headline: #061800;
     --gray-paragraph: #495057;
-    --white:#EDEDED;
+    --white: #EDEDED;
 
     /* secundary  -color */
 
     --nav--heigth: 7.2rem;
-    font-size: 62.5%; /*1rem = 10px  */
+    font-size: 62.5%;
+    /*1rem = 10px  */
 }
-body{
-    background-color: var(--brand--green-light);  
+
+body {
+    background-color: var(--brand--green-light);
+
 }
-.wrapper{
+
+.wrapper {
     width: 37.5rem;
     margin-inline: auto;
-    
-    
+
+
 }
-.container{
+
+.container {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.6rem;
-      
+
 }
 
 /* INICIO-HEADER */
 
-#navigation{
+#navigation {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16rem;
+    gap: 5rem;
     padding: 1.6rem 2.4rem;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0%;
     transform: translateX(0%);
     height: var(--nav--heigth);
-    width: 100vw;   
+    width: 100vw;
+
 }
 
-.scroll{
+.scroll {
     background-color: var(--brand--green);
     width: 100%;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--gray-headline);
+}
+
+.logo span {
+    color: var(--brand--green);
+    font-weight: 700;
+    stroke: #d84c15;
+}
+
+.logoExpanded {
+    color: white;
+}
+
+.logoExpanded span {
+    color: white;
 }
 
 /* FIM-HEADER */
 
 /* INICIO-HERO-SECTION */
-.hero-section{   
+.hero-section {
     text-align: center;
 
     padding-left: 2rem;
     padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
-    
+
     height: 108rem;
 }
 
-.txt-boas-vindas{
+.txt-boas-vindas {
     margin-top: calc(4.1rem + var(--nav--heigth));
     margin-bottom: 1.6rem;
 }
-.txt-subtitle{
+
+.txt-subtitle {
     font-size: 1.4rem;
     font-weight: bold;
-    color:var(--brand--green);
+    color: var(--brand--green);
     line-height: 150%;
     text-transform: uppercase;
-    
+
 }
-.title{
+
+.title {
     font-size: 3.4rem;
     line-height: 130%;
     margin-bottom: 2.4rem;
 
 }
-.txt-medicos{
+
+.txt-medicos {
     font-size: 1.8rem;
-    color:var(--gray-paragraph);
+    color: var(--gray-paragraph);
     line-height: 150%;
     margin-bottom: 3.2rem;
 
 }
-.button-consulta{
+
+.button-consulta {
     background-color: var(--brand--green);
     width: 26.3rem;
     height: 5.2rem;
-    border:none;
+    border: none;
     border-radius: 4rem;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
 
-    font-size:1.4rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
@@ -129,7 +165,8 @@ body{
     margin-right: auto;
     margin-bottom: 6.1rem;
 }
-.foto-mulher{
+
+.foto-mulher {
     width: auto;
     display: block;
     margin-inline: auto;
@@ -140,70 +177,98 @@ body{
 
 /* INICIO-BOX-NUMBERS */
 
-.box-numbers{
-    background:var(--brand-beige);
-    padding:4rem 8rem;
+.box-numbers {
+    background: var(--brand-beige);
+    padding: 4rem 8rem;
     margin-bottom: 10rem;
     border: 1px solid --brand--green-light;
     border-radius: .6rem;
 }
-.txt-box-numbers{
+
+.txt-box-numbers {
     font-size: 4.8rem;
-    line-height: 130%;  
+    line-height: 130%;
 }
-.txt-box-info{
+
+.txt-box-info {
     font-size: 1.6rem;
     line-height: 150%;
-    color: var(--brand--green); 
+    color: var(--brand--green);
 }
-.box-number1, .box-number2{
-    margin-bottom:6rem;
+
+.box-number1, .box-number2 {
+    margin-bottom: 6rem;
 }
 
 /* FIM-BOX-NUMBERS */
 
 /* ========== MENU EXPANDED ========== */
 
+body.menu-expanded {
+    overflow: hidden;
+}
 
-.menu-open{
+
+/* QUANDO O BODY NÃO TIVER A CLASSE MENU-EXPANDED ENTÃO VAI DEIXAR
+O MENU E O BOTAO CLOSE-MENU INVISIVEL */
+.displayNone {
+    display: none;
+}
+
+.menu, .close-menu,
+body.menu-expanded .open-menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* QUANDO O BODY TIVER A CLASSE MENU-EXPANDED ENTÃO VAI DEIXAR
+VISIVEL */
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.menu-expanded .menu {
     position: fixed;
     left: 0;
     top: 0;
     background-color: var(--brand--green);
-    width: 100vw;
-    height: 100vh;
 
+    padding-top: calc(var(--nav--heigth) + 5rem);
+
+    width: 100vw;
+    height: 100%;
+
+}
+
+body.menu-expanded nav {
+    position: relative;
+}
+
+.social-links {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3.2rem;
 }
-.menu-nav-on a{
-    
-    font-size: 2.4rem;
-    color: white;
-    font-weight: 700;
-    line-height: 5rem;
-    display: flex;
-    justify-content: center;
-}
-    
-.btn-consulta{
+
+.btn-consulta {
     background-color: white;
     width: 27.4rem;
     height: 5.5rem;
-    border:none;
+    border: none;
     border-radius: 4rem;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
 
-    font-size:1.8rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
-    color:#00856F;
+    color: #00856F;
     line-height: 1.8rem;
 
     margin-left: auto;
@@ -211,11 +276,32 @@ body{
     margin-top: 4.8rem;
     margin-bottom: 9.6rem;
 }
-.menu-social-links{
-    display:flex;
-    align-items: center;
+
+.menu-nav-on a {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 700;
+    line-height: 5rem;
+    display: flex;
     justify-content: center;
-    gap: 3.2rem;
+}
+
+body.menu-expanded .logo {
+    position: relative;
+    z-index: 100;
+
+}
+
+open-menu {
+    position: absolute;
+    top: 0;
+}
+.btn-menu{
+    position: absolute;
+    top: 15px;
+}
+.btn-menu1{
+    right: 95px;
 }
 
 
@@ -223,15 +309,11 @@ body{
 
 /* INICIO-SECTION-SERVICOS */
 
-.servicos-section{
-    background:var(--brand-green-light-02);
+.servicos-section {
+    background: var(--brand-green-light-02);
     height: 203.4rem;
-    
+
     text-align: center;
-}
-header#navigation .logo{
-    position: relative;
-    z-index: 100;
 }
 
 
