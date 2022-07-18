@@ -21,10 +21,10 @@
     <title>DoctorCare</title>
   </head>
   <!-- no body foi chamada a function onScroll -->
-  <body onscroll="onScroll()">
+  <body onscroll="onScroll()" class="wrapper">
     <div class="container">
       <header class="header">
-        <nav id="navigation" class="wrapper">
+        <nav id="navigation" class="">
           <a id="logoExpanded" class="logo" href="#"
             ><p>Doctor<span>Care</span></p></a
           >
@@ -75,7 +75,7 @@
         </div>
       </header>
       <section class="hero-section wrapper">
-        <h2 class="txt-subtitle txt-boas-vindas">
+        <h2 class="txt-green txt-boas-vindas">
           Boas-Vindas a Doctorcare 👋
         </h2>
         <h1 class="title">Assistência médica simplificada para todos</h1>
@@ -108,8 +108,113 @@
       </section>
 
       <section class="servicos-section">
-        <h4 class="txt-subtitle" id="txt-servicos-section">Serviços</h4>
+        
+      <div class="card-servicos">
+        <div class="card-servico0">
+          <h4 class="txt-green" id="txt-servicos-section">Serviços</h4>
+          <h2 class="txt-subtitle" id="txt-possoAjudar">Como podemos ajudá-lo a se sentir melhor?</h2>
+        </div>
+
+          <div class="card-servico1">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Problemas digestivos</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+          <div class="card-servico2">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Saúde Hormonal</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+          <div class="card-servico3">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Bem-estar mental</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+          <div class="card-servico4">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Cuidados Pediátricos</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+          <div class="card-servico5">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Autoimune e Inflamação</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+          <div class="card-servico6">
+            <img class="img-check" src="./assets/icon-check.svg"></img>
+            <h2 class="txt-servicos">Saúde do Coração</h2>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+          </div>
+
+        </div>
       </section>
+
+      <section class="sobre-section">
+        <h2 class="txt-green txt-sobre">Sobre nós</h2>
+        <h2 class="txt-subtitle quemSomos">Entenda quem somos e por que existimos</h2>
+        <p class="txt-paragraph paragraph-sobre">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+        <img class="img-medico" src="./assets/img-medico.svg" alt="foto médico com mulher e criança" />
+
+      </section>
+
+      <section class="contato-section">
+
+
+        <h2 class="txt-subtitle txt-contato">Entre em contato com a gente!</h2>
+
+        <div class="endereco">
+          <img src="./assets/icon-map.svg">
+          <p class="txt-paragraph">R. Amauri Souza, 346</p>
+        </div>
+       
+        <div class="email">
+          <img src="./assets/icon-email.svg">
+          <p class="txt-paragraph">contato@doctorcare.com</p>
+        </div>
+        
+
+        <button type="button" class="button-consulta">
+          <img src="./assets/whats.svg" />
+          agende sua consulta
+        </button>
+
+        <img class="foto-homem" src="./assets/homem.svg" alt="foto homem com celular na mão">
+      </section>
+
+      <footer class="footer">
+        <a id="logoFooter" href="#"><p>Doctor<span>Care</span></p></a>
+
+        <div class="footer-copy">
+          <p>©2021 Beautysalon.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+        
+
+        <ul class="social-links">
+          <li>
+            <a href="#"
+              ><img src="./assets/icon-insta.svg" alt="icone instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/icon-face.svg" alt="icone facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./assets/icon-youtube.svg" alt="icone youtube"
+            /></a>
+          </li>
+        </ul>
+
+      </footer>
     </div>
 
     <script src="./js/scripts.js"></script>
