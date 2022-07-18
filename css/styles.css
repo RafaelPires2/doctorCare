@@ -297,11 +297,11 @@ open-menu {
     top: 0;
 }
 .btn-menu{
-    position: absolute;
+    position: fixed;
     top: 15px;
 }
 .btn-menu1{
-    right: 95px;
+   padding-left: 5rem;
 }
 
 
