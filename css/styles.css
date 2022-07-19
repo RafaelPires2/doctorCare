@@ -38,7 +38,10 @@ nav button {
     font-size: 62.5%;
     /*1rem = 10px  */
 }
-
+html{
+    /* move o scroll de forma mais leve */
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--brand--green-light);
 
@@ -97,6 +100,7 @@ body {
     transform: translateX(0%);
     height: var(--nav--heigth);
     width: 100vw;
+    z-index: 100
 
 }
 
@@ -109,12 +113,12 @@ body {
     font-size: 2.4rem;
     font-weight: 400;
     color: var(--gray-headline);
+
 }
 
 .logo span {
     color: var(--brand--green);
     font-weight: 700;
-    stroke: #d84c15;
 }
 
 .logoExpanded {
@@ -140,7 +144,8 @@ body {
 
     display: flex;
     flex-direction: column;
-    z-index: 100;
+
+    z-index: 10;
 }
 
 .txt-boas-vindas {
@@ -199,11 +204,10 @@ body {
 .box-numbers {
     background: var(--brand-beige);
     padding: 4rem 8rem;
-    margin-bottom: 10rem;
-    border: 1px solid --brand--green-light;
+    border: 1px solid var(--brand--green-light);
     border-radius: .6rem;
 
-
+    z-index: 10;
 }
 
 .txt-box-numbers {
@@ -224,9 +228,12 @@ body {
 /* FIM-BOX-NUMBERS */
 
 /* ========== MENU EXPANDED ========== */
-
+.menu{
+    transform: translateY(100%);
+}
 body.menu-expanded {
     overflow: hidden;
+    
 }
 
 
@@ -248,6 +255,7 @@ body.menu-expanded .menu,
 body.menu-expanded .close-menu {
     opacity: 1;
     visibility: visible;
+    
 }
 
 body.menu-expanded .menu {
@@ -261,6 +269,11 @@ body.menu-expanded .menu {
     width: 100vw;
     height: 100%;
 
+    transition: transform 300ms;
+    transform: translateY(0);
+
+    z-index: 10;
+   
 }
 
 body.menu-expanded nav {
@@ -336,13 +349,18 @@ open-menu {
     background: var(--brand-green-light-02);
     height: 203.4rem;
     text-align: center;
-    padding-top: 35rem;
+    
     display: flex;
     flex-direction: column;
     justify-content:center ;
+
+    z-index: 10;
 }
 #txt-servicos-section{
     margin-bottom: 1.6rem;
+    margin-top: 20rem;
+    padding-top: 10rem;
+    
 }
 
 .img-check{

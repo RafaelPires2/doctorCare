@@ -35,3 +35,36 @@ function onScroll() {
     document.querySelector(".open-menu").src = "./assets/icon-menu1.svg";
   }
 }
+
+// comportamento de aparecimento gradual
+ScrollReveal({
+  origin:'top',
+  distance:'3rem',
+  duration:700,
+}).reveal(`
+#home,
+.foto-mulher,
+.box-number1,
+.box-number2,
+.box-number3,
+.box-number4,
+.box-number5,
+.box-number6,
+.card-servico0,
+.card-servico1,
+.card-servico2,
+.card-servico3,
+.card-servico4,
+.card-servico5,
+.card-servico6,
+.txt-sobre,
+.quemSomos,
+.paragraph-sobre,
+.img-medico,
+.txt-contato,
+.endereco,
+.email,
+.foto-homem,
+.footer
+
+ `);
