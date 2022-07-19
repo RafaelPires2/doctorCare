@@ -7,6 +7,37 @@ const menuExpanded = document.querySelector("body");
 const menu = document.querySelector(".menu");
 const logo = document.querySelector("#logoExpanded");
 
+const backTop = document.querySelector("#backTop");
+
+
+window.addEventListener('scroll', onScroll)
+onScroll();
+
+function onScroll() {
+  showNavOnScroll()
+  showBackTop()
+}
+
+function showNavOnScroll() {
+  if (scrollY > 0) {
+    navigation.classList.add("scroll");
+    logo.classList.add("logoExpanded");
+    document.querySelector(".open-menu").src = "./assets/icon-menu2.svg";
+  } else {
+    navigation.classList.remove("scroll");
+    logo.classList.remove("logoExpanded");
+    document.querySelector(".open-menu").src = "./assets/icon-menu1.svg";
+  }
+}
+
+function showBackTop() {
+  if (scrollY < 700) {
+   backTop.classList.remove('show');
+  } else {
+   backTop.classList.add('show');
+  }
+}
+
 function menuExpendedOn() {
   navigation.classList.add("logo");
   logo.classList.add("logoExpanded");
@@ -22,18 +53,6 @@ function menuExpendedOff() {
     logo.classList.remove("logoExpanded")
     document.body.classList.remove("menu-expanded")
    menu.classList.add("displayNone")}
-}
-
-function onScroll() {
-  if (scrollY > 0) {
-    navigation.classList.add("scroll");
-    logo.classList.add("logoExpanded");
-    document.querySelector(".open-menu").src = "./assets/icon-menu2.svg";
-  } else {
-    navigation.classList.remove("scroll");
-    logo.classList.remove("logoExpanded");
-    document.querySelector(".open-menu").src = "./assets/icon-menu1.svg";
-  }
 }
 
 // comportamento de aparecimento gradual
@@ -62,6 +81,7 @@ ScrollReveal({
 .paragraph-sobre,
 .img-medico,
 .txt-contato,
+.btn-consulta2,
 .endereco,
 .email,
 .foto-homem,

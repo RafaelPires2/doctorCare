@@ -14,6 +14,9 @@ nav button {
     border: none;
     cursor: pointer;
 }
+body button {
+    cursor: pointer;
+}
 
 :root {
     /* primary-color */
@@ -163,7 +166,7 @@ body {
 
 }
 
-.button-consulta {
+.btn-consulta2 {
     background-color: var(--brand--green);
     display: flex;
     flex-direction: row;
@@ -188,6 +191,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6.1rem;
+}
+.btn-consulta2:hover{
+    background-color: var(--brand-green-hover);
+
 }
 
 .foto-mulher {
@@ -310,6 +317,10 @@ body.menu-expanded nav {
     margin-top: 4.8rem;
     margin-bottom: 9.6rem;
 }
+.btn-consulta:hover{
+    background-color: var(--brand--green-light);
+      
+}
 
 .menu-nav-on a {
     font-size: 2.4rem;
@@ -318,6 +329,9 @@ body.menu-expanded nav {
     line-height: 5rem;
     display: flex;
     justify-content: center;
+}
+.menu-nav-on a:hover{
+    color: var(--brand--green-light);
 }
 
 .logo {
@@ -556,5 +570,22 @@ open-menu {
     padding-top: 2.4rem;
     padding-bottom: 3.2rem;
     
+}
+
+#backTop{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity:0 ;
+    visibility:hidden;
+   
+}
+#backTop.show{
+    opacity: 1;
+    visibility:visible;
+
+    transition: 700ms;
+
 }
 /* FIM-FOOTER */
