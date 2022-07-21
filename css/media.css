@@ -1,0 +1,282 @@
+@media (min-width: 320px) and (max-width: 374px) { 
+    
+   
+    .wrapper {
+        width: 33rem;  
+       
+    }
+    #navigation{
+        width: 100%;
+    }
+    .box-numbers{
+        width: 100%;
+       
+    }
+    .card-servicos{
+        width: 100%;
+        
+    }
+    #txt-servicos-section{
+        padding-top: 20rem;
+    }
+    .foto-homem{
+        width: 28rem;
+    }
+    body.menu-expanded .menu {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 768px){
+    .wrapper {
+       width: min(45rem, 100%);   
+    }
+    .foto-homem{
+        width: 40rem;
+    }
+}
+
+@media (min-width: 1024px){
+
+    /* ========= GERAL =================== */
+    .wrapper{
+        width: min(120rem, 100%);
+        padding-inline: auto;
+    }
+
+    /* ========= RESET =================== */
+    body.wrapper{
+        width: 100%;
+
+    }
+   
+    .header *{
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+        z-index: initial;
+    }
+    nav#navigation{
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+        z-index: initial;
+    }
+    .menu-nav-on a,
+    .menu-nav-on ul,
+    .menu-nav-on li{
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+        z-index: initial;
+    }
+
+    .close-menu, .open-menu, .social-links{
+        display: none;
+    }
+    
+    
+    
+    
+    /* ========= NAVIGATION =================== */
+
+  .header{
+    width: 100vw;
+    padding-inline: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+  }  
+ nav#navigation{
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+  }
+  .menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+ .btn-consulta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px var(--brand--green) solid;
+
+    width: 20rem;
+    height: 5rem;    
+    
+    color: var(--brand--green);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 18px;
+
+    transition: 300ms;
+
+ }
+ .btn-consulta:hover{
+    background-color: var(--brand--green);
+    color: white;
+ }
+ .logo p {
+    font-size: 2.4rem;
+ }    
+ .logo span{
+    font-size: 2.4rem;
+ } 
+ .menu-nav-on a{
+    
+    font-weight: 400;
+    color:var(--brand--green);
+    opacity: 0.7;
+    padding-inline: 1.7rem;   
+
+    transition: 300ms;
+ }     
+ 
+ .menu-nav-on a:hover{
+    
+    font-weight: 700;
+    color: var(--brand--green);
+    opacity: 1;
+ }     
+
+/* ========= SCROLL ============ */
+
+ .header.scroll .btn-consulta{
+   border:1px solid white;
+    
+ }
+ .header.scroll .btn-consulta:hover{
+    background-color: #00453A;
+    border: none;
+
+    
+ }
+ .header.scroll a{
+    color:#F7F9F9 ;
+ } 
+ nav#navigation.scroll p{
+    color: #F7F9F9 ;
+ }
+
+     /* ========= hero-section =================== */
+     
+
+     
+.hero-section{
+    height: 62.5rem;    
+}
+.container-home{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+ 
+    
+
+}
+.home{
+    display:flex;
+    flex-direction: column;
+    width: 60.5rem;
+    
+}
+.foto-mulher{
+    height: 50rem;
+    object-position: 0rem 5rem;
+    padding-right: 8rem;
+
+}
+.box-numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+    width: 112rem;
+    height: 21rem;
+   
+}
+    
+.title{
+    font-size: 5.2rem;
+   
+}
+.txt-medicos{
+    width: 58.5rem;
+    font-size: 1.8rem;
+}
+.btn-consulta2{
+    margin-left: 0;
+}
+.servicos-section{
+   
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+#txt-servicos-section{
+    width: 49.7rem;
+    margin: 0;
+    padding-top: 0;
+}
+#txt-possoAjudar{
+    width: 49.7rem;
+    font-size: 4rem;
+    line-height: 5.2rem;
+}
+.card-servico1, .card-servico2, .card-servico3, 
+.card-servico4, .card-servico5, .card-servico6 {
+    width: 34.7rem;
+    margin-inline: 2rem;
+
+}
+
+}

@@ -14,6 +14,7 @@ nav button {
     border: none;
     cursor: pointer;
 }
+
 body button {
     cursor: pointer;
 }
@@ -41,35 +42,41 @@ body button {
     font-size: 62.5%;
     /*1rem = 10px  */
 }
-html{
+
+html {
     /* move o scroll de forma mais leve */
     scroll-behavior: smooth;
+    
 }
+
 body {
     background-color: var(--brand--green-light);
-
+    overflow: overlay;
 }
 
 .wrapper {
     width: 37.5rem;
     margin-inline: auto;
+    
 
 
 }
-.txt-paragraph{
+
+.txt-paragraph {
     font-weight: 400;
     line-height: 2.4rem;
     color: var(--gray-paragraph);
 
 }
 
-.txt-subtitle{
+.txt-subtitle {
     font-size: 3rem;
     font-weight: 700;
     line-height: 4rem;
     color: var(--gray-headline);
 
 }
+
 .txt-green {
     font-size: 1.4rem;
     font-weight: bold;
@@ -77,6 +84,7 @@ body {
     line-height: 150%;
     text-transform: uppercase;
 }
+
 .title {
     font-size: 3.4rem;
     line-height: 130%;
@@ -95,17 +103,43 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    padding: 1.6rem 2.4rem;
     position: fixed;
     top: 0;
     left: 0%;
     transform: translateX(0%);
     height: var(--nav--heigth);
     width: 100vw;
-    z-index: 100
+    z-index: 100;
 
 }
+
+#navContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    right: 2rem;
+}
+
+.open-menu {
+    position: absolute;
+    top: -1.8rem;
+    left: 10rem;
+
+}
+
+.close-menu {
+    position: absolute;
+    top: -1.8rem;
+    left: 10rem;
+}
+
+
+
 
 .scroll {
     background-color: var(--brand--green);
@@ -126,13 +160,13 @@ body {
 
 .logoExpanded {
     color: white;
+
+
 }
 
 .logoExpanded span {
     color: white;
 }
-
-/* FIM-HEADER */
 
 /* INICIO-HERO-SECTION */
 .hero-section {
@@ -192,7 +226,8 @@ body {
     margin-right: auto;
     margin-bottom: 6.1rem;
 }
-.btn-consulta2:hover{
+
+.btn-consulta2:hover {
     background-color: var(--brand-green-hover);
 
 }
@@ -203,8 +238,6 @@ body {
     margin-inline: auto;
     object-position: 0 2rem;
 }
-
-/* FIM-HERO-SECTION */
 
 /* INICIO-BOX-NUMBERS */
 
@@ -232,17 +265,15 @@ body {
     margin-bottom: 6rem;
 }
 
-/* FIM-BOX-NUMBERS */
-
 /* ========== MENU EXPANDED ========== */
-.menu{
+.menu {
     transform: translateY(100%);
+
 }
+
 body.menu-expanded {
     overflow: hidden;
-    
 }
-
 
 /* QUANDO O BODY NÃO TIVER A CLASSE MENU-EXPANDED ENTÃO VAI DEIXAR
 O MENU E O BOTAO CLOSE-MENU INVISIVEL */
@@ -254,6 +285,7 @@ O MENU E O BOTAO CLOSE-MENU INVISIVEL */
 body.menu-expanded .open-menu {
     opacity: 0;
     visibility: hidden;
+
 }
 
 /* QUANDO O BODY TIVER A CLASSE MENU-EXPANDED ENTÃO VAI DEIXAR
@@ -262,29 +294,17 @@ body.menu-expanded .menu,
 body.menu-expanded .close-menu {
     opacity: 1;
     visibility: visible;
-    
 }
-
 body.menu-expanded .menu {
     position: fixed;
     left: 0;
     top: 0;
     background-color: var(--brand--green);
-
     padding-top: calc(var(--nav--heigth) + 5rem);
-
     width: 100vw;
     height: 100%;
-
-    transition: transform 300ms;
-    transform: translateY(0);
-
-    z-index: 10;
-   
-}
-
-body.menu-expanded nav {
-    position: relative;
+    transform: translateY(0%);
+    z-index: 20;
 }
 
 .social-links {
@@ -317,9 +337,10 @@ body.menu-expanded nav {
     margin-top: 4.8rem;
     margin-bottom: 9.6rem;
 }
-.btn-consulta:hover{
+
+.btn-consulta:hover {
     background-color: var(--brand--green-light);
-      
+
 }
 
 .menu-nav-on a {
@@ -330,31 +351,9 @@ body.menu-expanded nav {
     display: flex;
     justify-content: center;
 }
-.menu-nav-on a:hover{
+
+.menu-nav-on a:hover {
     color: var(--brand--green-light);
-}
-
-.logo {
-    padding-right: 10rem;
-}
-
-body.menu-expanded .logo {
-    position: relative;
-    z-index: 100;
-}
-
-open-menu {
-    position: absolute;
-    top: 0;
-}
-
-.btn-menu {
-    position: fixed;
-    top: 15px;
-}
-
-.btn-menu1 {
-    padding-left: 5rem;
 }
 
 /* INICIO-SECTION-SERVICOS */
@@ -363,33 +362,36 @@ open-menu {
     background: var(--brand-green-light-02);
     height: 203.4rem;
     text-align: center;
-    
+
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
 
     z-index: 10;
 }
-#txt-servicos-section{
+
+#txt-servicos-section {
     margin-bottom: 1.6rem;
     margin-top: 20rem;
     padding-top: 10rem;
-    
+
 }
 
-.img-check{
+.img-check {
     width: 2.4rem;
     height: 2.4rem;
 }
-.card-servicos{
+
+.card-servicos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    
+
 }
-.card-servico0{
+
+.card-servico0 {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -397,9 +399,10 @@ open-menu {
     width: 32.7rem;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico1{
+
+.card-servico1 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -411,9 +414,10 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico2{
+
+.card-servico2 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -425,9 +429,10 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico3{
+
+.card-servico3 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -439,9 +444,10 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico4{
+
+.card-servico4 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -453,9 +459,10 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico5{
+
+.card-servico5 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -467,9 +474,10 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-    
+
 }
-.card-servico6{
+
+.card-servico6 {
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -481,73 +489,72 @@ open-menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 10rem;
-    
+
 }
 
-/* FIM-SECTION-SERVICOS */
-
 /* INICIO-SECTION-SOBRE */
-.sobre-section{
+.sobre-section {
     height: 96.9rem;
     background-color: var(--brand-beige);
 
     display: flex;
-    
+
     justify-content: center;
     flex-direction: column;
     text-align: left;
 
     padding-inline: 2.4rem;
 }
-.txt-sobre{
-    margin-bottom:1.6rem ;
-}
-.quemSomos{
-    margin-bottom:2.4rem ;
+
+.txt-sobre {
+    margin-bottom: 1.6rem;
 }
 
-.paragraph-sobre{
-    margin-bottom:6rem ;
+.quemSomos {
+    margin-bottom: 2.4rem;
 }
-/* FIM-SECTION-SOBRE */
+
+.paragraph-sobre {
+    margin-bottom: 6rem;
+}
 
 /* INICIO-SECTION-CONTATO */
 
-.contato-section{
-    background-color:white ;
+.contato-section {
+    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    text-align:left;
+    align-items: flex-start;
+    text-align: left;
     padding-top: 10rem;
     padding-inline: 2.4rem;
-    
+
 }
 
-.endereco{
+.endereco {
     display: flex;
     gap: 0.8rem;
     margin-bottom: 1.6rem;
     margin-top: 3.2rem;
 
 }
-.email{
+
+.email {
     display: flex;
     gap: 0.8rem;
     margin-bottom: 3.2rem;
 }
-.foto-homem{
+
+.foto-homem {
     width: 32.4rem;
     display: block;
     margin-inline: auto;
     padding-bottom: 10rem;
 }
 
-/* FIM-SECTION-CONTATO */
-
 /* INICIO-FOOTER */
 
-.footer{
+.footer {
     background-color: var(--brand--green);
     padding: 6rem 2.4rem;
     display: flex;
@@ -555,37 +562,44 @@ open-menu {
     align-items: flex-start;
 }
 
-#logoFooter{
-    color:white;
+#logoFooter {
+    color: white;
     font-size: 4.1rem;
 }
-#logoFooter span{
+
+#logoFooter span {
     font-weight: 700;
-    
-    
+
+
 }
-.footer-copy{
+
+.footer-copy {
     color: white;
     line-height: 2.8rem;
     padding-top: 2.4rem;
     padding-bottom: 3.2rem;
-    
+
 }
 
-#backTop{
+#backTop {
     position: fixed;
     bottom: 1rem;
     right: 2.5rem;
 
-    opacity:0 ;
-    visibility:hidden;
-   
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(100%);
+
+
 }
-#backTop.show{
+
+#backTop.show {
     opacity: 1;
-    visibility:visible;
+    visibility: visible;
 
-    transition: 700ms;
-
+    transition: 500ms;
+    transform: translateY(0);
 }
+
 /* FIM-FOOTER */

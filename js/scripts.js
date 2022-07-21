@@ -1,6 +1,7 @@
 //função altera o estado do menuToggle, adicionando elemento css e alterando as imagens
 
 const navigation = document.querySelector("#navigation");
+const header = document.querySelector(".header");
 
 const menuExpanded = document.querySelector("body");
 
@@ -9,9 +10,13 @@ const logo = document.querySelector("#logoExpanded");
 
 const backTop = document.querySelector("#backTop");
 
+const openMenu = document.querySelector("#btnOpen")
+const closeMenu = document.querySelector("#btnClose")
+
 
 window.addEventListener('scroll', onScroll)
 onScroll();
+
 
 function onScroll() {
   showNavOnScroll()
@@ -21,10 +26,12 @@ function onScroll() {
 function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");
+    header.classList.add("scroll");
     logo.classList.add("logoExpanded");
     document.querySelector(".open-menu").src = "./assets/icon-menu2.svg";
   } else {
     navigation.classList.remove("scroll");
+    header.classList.remove("scroll");
     logo.classList.remove("logoExpanded");
     document.querySelector(".open-menu").src = "./assets/icon-menu1.svg";
   }
@@ -53,6 +60,7 @@ function menuExpendedOff() {
     logo.classList.remove("logoExpanded")
     document.body.classList.remove("menu-expanded")
    menu.classList.add("displayNone")}
+
 }
 
 // comportamento de aparecimento gradual

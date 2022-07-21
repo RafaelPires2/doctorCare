@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
 
     <!-- Fonts -->
 
@@ -20,22 +21,25 @@
 
     <title>DoctorCare</title>
   </head>
-  <!-- no body foi chamada a function onScroll -->
+  
   <body onscroll="onScroll()" class="wrapper">
     <div class="container">
-      <header class="header">
+      <header class="header scroll">
         <nav id="navigation" class="">
+         <div id="navContent">
           <a id="logoExpanded" class="logo" href="#home" onclick="menuExpendedOff()"
             ><p>Doctor<span>Care</span></p></a
           >
 
           <button onclick="menuExpendedOn()">
-            <img class="open-menu btn-menu btn-menu1" src="./assets/icon-menu1.svg" />
+            <img id="btnOpen" class="open-menu btn-menu" src="./assets/icon-menu1.svg" />
           </button>
-          <button onclick="menuExpendedOff()">
-            <img class="close-menu btn-menu btn-menu2" src="./assets/icon-close.svg" />
+          <button id="btnClose" onclick="menuExpendedOff()">
+            <img  class="close-menu btn-menu" src="./assets/icon-close.svg" />
           </button>
+        </div>
         </nav>
+
 
         <div class="menu displayNone">
           <nav class="menu-nav-on">
@@ -73,6 +77,7 @@
         </div>
       </header>
       <section class="hero-section wrapper">
+        <div class="container-home">
         <div id="home">
           <h2 class="txt-green txt-boas-vindas">
             Boas-Vindas a Doctorcare 👋
@@ -88,12 +93,13 @@
             agende sua consulta
         </a>
   
+      </div>
           <img class="foto-mulher" src="./assets/mulher.svg" />
-
         </div>
         
       
 
+        
         <div class="box-numbers">
           <div class="box-number1">
             <h3 class="txt-box-numbers">+3.500</h3>
@@ -108,8 +114,8 @@
             <p class="txt-box-info">Anos no mercado</p>
           </div>
         </div>
-      </section>
 
+      </section>
       <section  class="servicos-section">
         
       <div  class="card-servicos">
@@ -117,6 +123,7 @@
           <h4 class="txt-green" id="txt-servicos-section">Serviços</h4>
           <h2 class="txt-subtitle" id="txt-possoAjudar">Como podemos ajudá-lo a se sentir melhor?</h2>
         </div>
+        <div class="cards">
 
           <div class="card-servico1">
             <img class="img-check" src="./assets/icon-check.svg"></img>
@@ -153,6 +160,7 @@
             <h2 class="txt-servicos">Saúde do Coração</h2>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
           </div>
+        </div>
 
         </div>
       </section>
