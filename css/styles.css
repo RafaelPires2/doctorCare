@@ -233,7 +233,7 @@ body {
 }
 
 .foto-mulher {
-    width: auto;
+    width: 28.2rem;
     display: block;
     margin-inline: auto;
     object-position: 0 2rem;
@@ -401,8 +401,7 @@ body.menu-expanded .menu {
     margin-bottom: 3.2rem;
 
 }
-
-.card-servico1 {
+.card{
     background-color: white;
     width: 32.7rem;
     padding: 2.4rem;
@@ -414,83 +413,9 @@ body.menu-expanded .menu {
     border: 1px solid --brand--green-light;
     border-radius: 0.6rem;
     margin-bottom: 3.2rem;
-
 }
 
-.card-servico2 {
-    background-color: white;
-    width: 32.7rem;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1.6rem;
-    border: 1px solid --brand--green-light;
-    border-radius: 0.6rem;
-    margin-bottom: 3.2rem;
 
-}
-
-.card-servico3 {
-    background-color: white;
-    width: 32.7rem;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1.6rem;
-    border: 1px solid --brand--green-light;
-    border-radius: 0.6rem;
-    margin-bottom: 3.2rem;
-
-}
-
-.card-servico4 {
-    background-color: white;
-    width: 32.7rem;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1.6rem;
-    border: 1px solid --brand--green-light;
-    border-radius: 0.6rem;
-    margin-bottom: 3.2rem;
-
-}
-
-.card-servico5 {
-    background-color: white;
-    width: 32.7rem;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1.6rem;
-    border: 1px solid --brand--green-light;
-    border-radius: 0.6rem;
-    margin-bottom: 3.2rem;
-
-}
-
-.card-servico6 {
-    background-color: white;
-    width: 32.7rem;
-    padding: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1.6rem;
-    border: 1px solid --brand--green-light;
-    border-radius: 0.6rem;
-    margin-bottom: 10rem;
-
-}
 
 /* INICIO-SECTION-SOBRE */
 .sobre-section {
