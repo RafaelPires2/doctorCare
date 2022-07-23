@@ -2,7 +2,7 @@
 
 
     .wrapper {
-        width: 33rem;
+        width: 34rem;
 
 
     }
@@ -37,6 +37,9 @@
     .foto-homem {
         width: 28rem;
     }
+    .img-medico{
+        width: 28rem;
+    }
 
     body.menu-expanded .menu {
         width: 100%;
@@ -56,6 +59,9 @@
     .foto-mulher {
         width: 40rem;
     }
+    .img-medico{
+        width: 40rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -66,10 +72,9 @@
         padding-inline: auto;
 
     }
-
     .wrapper {
         display: grid;
-        width: min(120rem, 100%);
+        width: min(112rem, 100%);
     }
 
     .col-a {
@@ -81,10 +86,10 @@
     }
 
     /* ========= RESET =================== */
-    body.wrapper {
-        width: 100%;
-
-
+    
+    .container{
+        width: 100rem;
+        margin-inline: auto;
     }
 
     .header * {
@@ -144,7 +149,7 @@
     /* ========= NAVIGATION =================== */
 
     .header {
-        width: 100vw;
+        width: 100rem;
         padding-inline: auto;
         display: flex;
         flex-direction: row;
@@ -318,14 +323,24 @@
     display: grid;
     height: 70rem;
     align-items: center;
+    justify-items: center;
+   
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'B A';
 
 }
+#sobre .col-a{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+ 
+    
+    
+} 
 
 .img-medico {
-    width: 48rem;
-    margin-inline: 2rem;
+    width: 45rem;
+   padding-inline: 2rem;
 }
 
 .quemSomos {
@@ -334,9 +349,25 @@
 }
 
 /* ========= CONTATO =================== */
-
 #contato {
     height: 70rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+}
+#contato .col-a {
+ 
+  margin-left: 15%;
+}
+.foto-homem{
+    width: auto;
+    height: 35rem;
+    padding-bottom: 0;
+    margin-right: 20%;
+   
 }
 
 .txt-contato {
@@ -346,7 +377,6 @@
 
 .box-txt-contato {
     width: 40rem;
-    padding-inline: 12rem;
 }
 
 .endereco {
@@ -357,11 +387,23 @@
     font-size: 1.8rem;
 }
 
-.paragraph-sobre {
-    margin: 0;
-}
+
 
 /* ========= FOOTER =================== */
+.footer {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+}
+.footer .col-a{
+    padding-left: 10rem;
+}
+footer .social-links{
+    display: flex;
+    align-items: flex-end;
+}
+
 
 
 }
