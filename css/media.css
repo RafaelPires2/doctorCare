@@ -147,9 +147,12 @@
     }
 
     /* ========= NAVIGATION =================== */
-
+    .cont{
+        width: 50%;
+    }
     .header {
-        width: 100rem;
+        width: 100vw;
+        left: 0;
         padding-inline: auto;
         display: flex;
         flex-direction: row;
@@ -162,7 +165,6 @@
     }
 
     nav#navigation {
-
         width: 20%;
         display: flex;
         justify-content: center;
@@ -216,6 +218,8 @@
         padding-inline: 1.7rem;
 
         transition: 300ms;
+
+        
     }
 
     .menu-nav-on a:hover {
@@ -223,9 +227,23 @@
         font-weight: 700;
         color: var(--brand--green);
         opacity: 1;
+
+        border-bottom: 2px solid var(--brand--green); 
+       
     }
+    /* verificar o active para funcionar */
+    .active{
+        font-weight: 700;
+        border-bottom: 2px solid var(--brand--green); 
+        color: white;
+        opacity: 1;
+
+    }
+    
 
     /* ========= SCROLL ============ */
+
+
 
     .header.scroll .btn-consulta {
         border: 1px solid white;
@@ -242,6 +260,11 @@
     .header.scroll a {
         color: #F7F9F9;
     }
+    .header.scroll .menu-nav-on a:hover {
+        color: #F7F9F9;
+        border-bottom: 2px solid  #F7F9F9;
+    }
+ 
 
     nav#navigation.scroll p {
         color: #F7F9F9;
